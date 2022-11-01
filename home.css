@@ -1,0 +1,45 @@
+html,
+body {
+  background-image: url("./pictures/background home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(80, 84, 82);
+}
+
+.bluelink{
+  color: #54ff0a;
+  
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  margin-bottom: 10%;
+}
+
+h5,
+h2 {
+  color: wheat;
+}
+
+h4 {
+  color: white;
+}
+
+video {
+  margin-left: 27%;
+  width: 50%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+.spacing {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.hometext {
+  margin-top: 18%;
+}
