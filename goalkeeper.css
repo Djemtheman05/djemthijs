@@ -1,0 +1,35 @@
+html,
+body {
+  background-image: url("./pictures/background\ Projects.png");
+  background-size: 100% 100% ;
+  background-repeat: no-repeat;
+  background-color: rgb(80, 84, 82);
+  height: auto;
+}
+
+.bluelink {
+  color: lightblue;
+}
+
+.redlink {
+  color: red;
+} 
+
+.greenlink {
+  color: greenyellow;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+h1,
+h5{
+  color: wheat;
+}
+
+.spacing {
+  margin-left: 20%;
+  margin-right: 20%;
+}

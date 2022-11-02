@@ -1,7 +1,7 @@
 html,
 body {
   background-image: url("./pictures/background home.png");
-  background-size: 100% 100vh ;
+  background-size: 100% 100% ;
   background-repeat: no-repeat;
   background-color: rgb(80, 84, 82);
   height: auto;
@@ -15,10 +15,6 @@ body {
   color: red;
 }
 
-.yellowlink {
-  color: yellow;
-}
-
 .greenlink {
   color: greenyellow;
 }
@@ -27,17 +23,16 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  margin-bottom: 10%;
-}
-
 h3 {
   color: lightblue;
 }
 
-h5,
-h2 {
+h5 {
   color: wheat;
+}
+
+h2{
+  color: black;
 }
 
 h4 {
@@ -45,7 +40,7 @@ h4 {
 }
 
 video {
-  margin-left: 27%;
+  margin-left: 28%;
   width: 50%;
   margin-top: 5%;
   position: absolute;

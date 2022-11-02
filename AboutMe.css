@@ -15,10 +15,6 @@ body {
   color: red;
 }
 
-.yellowlink {
-  color: yellow;
-}
-
 .greenlink {
   color: greenyellow;
 }
@@ -28,8 +24,7 @@ a:hover {
 }
 
 h5,
-p,
-h2 {
+p{
   color: wheat;
 }
 
@@ -40,13 +35,6 @@ h3 {
 
 h4 {
   color: white;
-}
-
-video {
-  margin-left: 27%;
-  width: 50%;
-  margin-top: 5%;
-  position: absolute;
 }
 
 .spacing {
