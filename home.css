@@ -1,21 +1,25 @@
 html,
 body {
   background-image: url("./pictures/background home.png");
-  background-size: cover;
+  background-size: 100% 100vh ;
   background-repeat: no-repeat;
   background-color: rgb(80, 84, 82);
+  height: auto;
 }
 
-.bluelink{
+.bluelink {
   color: lightblue;
 }
-.redlink{
+
+.redlink {
   color: red;
 }
-.yellowlink{
+
+.yellowlink {
   color: yellow;
 }
-.greenlink{
+
+.greenlink {
   color: greenyellow;
 }
 
@@ -25,6 +29,10 @@ a:hover {
 
 img {
   margin-bottom: 10%;
+}
+
+h3 {
+  color: lightblue;
 }
 
 h5,

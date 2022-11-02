@@ -1,21 +1,25 @@
 html,
 body {
   background-image: url("./pictures/background\ About\ me.png");
-  background-size: cover;
+  background-size: 100% 100% ;
   background-repeat: no-repeat;
   background-color: rgb(80, 84, 82);
+  height: auto;
 }
 
-.bluelink{
+.bluelink {
   color: lightblue;
 }
-.redlink{
+
+.redlink {
   color: red;
 }
-.yellowlink{
+
+.yellowlink {
   color: yellow;
 }
-.greenlink{
+
+.greenlink {
   color: greenyellow;
 }
 
@@ -23,14 +27,16 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  margin-bottom: 10%;
-}
-
 h5,
+p,
 h2 {
   color: wheat;
 }
+
+h3 {
+  color: red;
+}
+
 
 h4 {
   color: white;
@@ -48,6 +54,6 @@ video {
   margin-right: 20%;
 }
 
-.hometext {
-  margin-top: 18%;
+.aboutmetext {
+  margin-top: 2%;
 }
