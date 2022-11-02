@@ -7,8 +7,16 @@ body {
 }
 
 .bluelink{
-  color: blue;
-  
+  color: lightblue;
+}
+.redlink{
+  color: red;
+}
+.yellowlink{
+  color: yellow;
+}
+.greenlink{
+  color: greenyellow;
 }
 
 a:hover {

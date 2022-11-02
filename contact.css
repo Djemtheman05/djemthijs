@@ -1,20 +1,53 @@
-h5{
-    color: wheat;
-  }
-  
-  video{
-     height: 140px;
-     position: fixed;
-     top: 10%;
-     left: 30%;    
-  }
-  
-  .side{
-    width: 300px;
-    margin-top:-149px;
-   }
-  
-   .sidee{
-     width: 300px;
-     margin-top:-149px;
-   }
+html,
+body {
+  background-image: url("./pictures/background\ Contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(80, 84, 82);
+}
+
+.bluelink{
+  color: lightblue;
+}
+.redlink{
+  color: red;
+}
+.yellowlink{
+  color: yellow;
+}
+.greenlink{
+  color: greenyellow;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  margin-bottom: 10%;
+}
+
+h5,
+h2 {
+  color: wheat;
+}
+
+h4 {
+  color: white;
+}
+
+video {
+  margin-left: 27%;
+  width: 50%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+.spacing {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.hometext {
+  margin-top: 18%;
+}
