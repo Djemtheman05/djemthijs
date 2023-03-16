@@ -39,11 +39,14 @@ h4 {
   color: white;
 }
 
-video {
-  margin-left: 28%;
-  width: 50%;
+.Animatedtext h2 {
+  margin-left: 29%;
   margin-top: 5%;
   position: absolute;
+  font-size: 3vw;
+  color: #999;
+  font-weight: 700;
+  transition: 0.5s;
 }
 
 .spacing {
@@ -53,4 +56,5 @@ video {
 
 .hometext {
   margin-top: 18%;
+  
 }

@@ -1,0 +1,249 @@
+body{
+    display:  flex;
+    min-height: 98vh;
+    background: linear-gradient(rgb(130, 93, 56), rgb(27, 0, 160));
+    font-family: Arial;
+}
+
+.item-explanation {
+  grid-area: explanation;
+} 
+.item-items {
+  grid-area: items;
+} 
+
+.container {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  padding-bottom: 50px;
+  grid-template-rows: auto;
+  grid-template-columns: 33% 66%;
+  grid-template-areas:
+  "explanation items"
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    grid-template-columns: auto;
+    grid-template-areas:
+    "explanation" 
+    "items"
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -180px;
+  width: 200px;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-button {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.sidebar-button span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in-out;
+}
+
+.sidebar-button span:nth-child(1) {
+  top: 0;
+}
+
+.sidebar-button span:nth-child(2) {
+  top: 17px;
+}
+
+.sidebar-button span:nth-child(3) {
+  top: 34px;
+}
+
+.sidebar.open .sidebar-button span:nth-child(1) {
+  top: 17px;
+  width: 0%;
+  left: 50%;
+}
+
+.sidebar.open .sidebar-button span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.sidebar.open .sidebar-button span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.sidebar-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(rgba(25, 0, 255, 0.5), rgb(40, 40, 40));
+  overflow-x: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.open .sidebar-content {
+  width: 200px;
+}
+
+.sidebar-content a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-content a:hover {
+  background-color: #555;
+}
+
+.content h3 {
+    margin-left: 30%;
+    margin-top: 15%;
+    font-size: 2em;
+    color: #999;
+    font-weight: 200;
+    transition: 0.5s;
+}
+
+.content h2{
+    margin-left: 30%;
+    font-size: 5em;
+    color: #999;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.content h2 span{
+    color: rgb(161, 118, 88);
+}
+
+.content p{
+    margin-left: 30%;
+    font-size: 1.2em;
+    color: #999;
+    transition: 0.5s;
+}
+
+section{
+    margin-left: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 48px;
+}
+
+i
+{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 0.5px;
+    user-select: none;
+    cursor: default;
+    transform: rotate(-30deg);
+}
+
+i:hover{
+    transition: 0s;
+    color: goldenrod;
+    text-shadow: 0 0 120px goldenrod;
+    transform: rotate(333deg);
+}
+
+section .row div{
+    animation: animate1 80s linear infinite;
+    animation-delay: -80s;
+}
+
+section .row div:nth-child(2){
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate1{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate2{
+    0%
+    {
+        transform: translateX(0%);
+    }
+    100%
+    {
+        transform: translateX(-200%);
+    }
+}
+
+section .row:nth-child(even) div{
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+
+section .row:nth-child(even) div:nth-child(2){
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate3{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate4{
+    0%
+    {
+        transform: translateX(-200%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
