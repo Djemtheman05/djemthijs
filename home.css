@@ -58,3 +58,10 @@ h4 {
   margin-top: 18%;
   
 }
+
+.col-md-9 h2{
+  font-size: 2vw;
+  color: #999;
+  font-weight: 700;
+  transition: 0.5s;
+}
