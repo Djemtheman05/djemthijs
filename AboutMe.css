@@ -1,6 +1,6 @@
 html,
 body {
-  background-image: url("./pictures/background\ About\ me.png");
+  background-image: url("./pictures/background\ About\ me2.png");
   background-size: 100% 100% ;
   background-repeat: no-repeat;
   background-color: rgb(80, 84, 82);
@@ -25,7 +25,7 @@ a:hover {
 
 h5,
 p{
-  color: wheat;
+  color: white;
 }
 
 h3 {
@@ -44,4 +44,8 @@ h4 {
 
 .aboutmetext {
   margin-top: 2%;
+}
+
+.bordertext{
+  box-shadow: 0px 0px 10px 10px rgba(150, 150, 150, 0.2);
 }

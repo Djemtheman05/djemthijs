@@ -1,9 +1,9 @@
 html,
 body {
-  background-image: url("./pictures/background\ Projects.png");
+  background-image: url("./pictures/background\ Projects2.png");
   background-size: 100% 100% ;
   background-repeat: no-repeat;
-  background-color: rgb(80, 84, 82);
+  background-color: rgb(182, 99, 30);
   height: auto;
 }
 
@@ -15,8 +15,8 @@ body {
   color: red;
 } 
 
-.greenlink {
-  color: greenyellow;
+.goldlink {
+  color: goldenrod;
 }
 
 a:hover {
@@ -24,11 +24,11 @@ a:hover {
 }
 
 h3 {
-  color: greenyellow;
+  color: goldenrod;
 }
 
 h5 {
-  color: wheat;
+  color: white;
 }
 
 .spacing {
@@ -38,4 +38,8 @@ h5 {
 
 .projectstext {
   margin-top: 2%;
+}
+
+.textborder{
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.2);
 }
