@@ -15,8 +15,8 @@ body {
   color: red;
 }
 
-.greenlink {
-  color: greenyellow;
+.goldlink {
+  color: goldenrod;
 }
 
 a:hover {
@@ -67,12 +67,25 @@ h4 {
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.email, h2{
-  font-size: 1.7vmax;
+.email, h3{
+  font-size: 1vmax;
   color: White;
   transition: 0.5s;
 }
 
-i{
-  margin-left: 5%;
+i
+{
+    margin-left: 5%;
+    color: white;
+    transition: 1s;
+    user-select: none;
+    cursor: default;
+    font-size: 70px;
+}
+
+i:hover{
+    transition: 0.5s;
+    color: goldenrod;
+    text-shadow: 0 0 75px rgb(255, 255, 255);
+    transform: rotate(720deg);
 }
