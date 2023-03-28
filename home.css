@@ -80,12 +80,12 @@ i
     transition: 1s;
     user-select: none;
     cursor: default;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 i:hover{
     transition: 0.5s;
     color: goldenrod;
     text-shadow: 0 0 75px rgb(255, 255, 255);
-    transform: rotate(720deg);
+    transform: rotate(360deg);
 }
