@@ -7,20 +7,148 @@ body {
   height: auto;
 }
 
-.bluelink {
-  color: lightblue;
+.Home
+{
+    margin-left: -2%;
 }
 
-.redlink {
-  color: red;
+.AboutMe
+{
+   margin-left: 35%;
 }
 
-.goldlink {
-  color: goldenrod;
+.Projects
+{
+    margin-left: 70%;
 }
 
-a:hover {
+.menu {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  transition: 1s;
+  overflow: hidden;
   text-decoration: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgb(0, 0, 0, 0.3));
+}
+
+.menu:hover
+{
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr),
+    0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+
+.menu::before
+{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 400%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animate 5s linear infinite;
+}
+
+.menu::after
+{
+    content:'';
+    position: absolute;
+    inset: 4px;
+    background: rgb(0, 0, 0);
+}
+
+.menu:hover::before
+{
+    width: 120%;
+}
+
+.menu:hover::after
+{
+    background: var(--clr);
+}
+
+.menu span
+{
+    position: relative;
+    z-index: 1;
+    font-size: 3vb;
+    color: beige;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.menu:hover span
+{
+    opacity: 1;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.spacing {
+  margin-left: 30%;
+  margin-right: 32%;
+}
+
+@media (max-width: 1300px)
+{
+    .menu span
+    {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .spacing
+    {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .menu::before
+    {
+        width: 10px;
+    }
+}
+
+@media (max-width: 1500px)
+{
+    .menu
+    {
+      padding: 5px 15px;
+    }
+}
+
+
+@media (max-width: 600px)
+{
+  .spacing
+  {
+    margin-left: 27%;
+    margin-right: 30%;
+  }
+  .menu::after
+  {
+      inset: 1px;
+  }
+  .menu 
+  {
+    padding: 5px 10px;
+  }
 }
 
 h3 {
@@ -52,12 +180,6 @@ h4 {
 .Animatedtext h2 span{
   color: rgb(161, 118, 88);
 }
-
-.spacing {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
 .hometext {
   margin-top: 18%;
   text-align: center;
