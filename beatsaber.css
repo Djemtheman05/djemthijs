@@ -4,7 +4,7 @@ body {
   background-size: 100% 100% ;
   background-repeat: no-repeat;
   background-color: rgb(0, 40, 255);
-  height: auto;
+  min-height: 100vh;
 }
 
 .bluelink {

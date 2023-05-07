@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(0, 40, 255);
   height: auto;
+  min-height: 100vh;
 }
 
 .Home
@@ -190,9 +191,10 @@ h4 {
 }
 
 .email, h3{
-  font-size: 1vmax;
+  font-size: 2vmax;
   color: White;
   transition: 0.5s;
+  margin-top:2%
 }
 
 i
@@ -210,4 +212,22 @@ i:hover{
     color: goldenrod;
     text-shadow: 0 0 75px rgb(255, 255, 255);
     transform: rotate(360deg);
+}
+
+@media (max-width: 1300px)
+{
+  .email{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 30%;
+  }
+}
+
+@media (max-width: 450px)
+{
+  .email{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 20%;
+  }
 }
