@@ -194,27 +194,39 @@ img
   margin-top: 2%;
 }
 
-.text
-{
-  margin-left: 170%;
-  flex-grow: 1;
-}
-
 .green:hover
 {
-  background-color: rgb(100, 255, 100, 0.3);
+  background-color:rgba(0, 231, 0, 0.4);
+  transition: 0.5s;
+}
+
+.red:hover
+{
+  background-color: rgba(255, 0, 0, 0.4);
   transition: 0.5s;
 }
 
 .blue:hover
 {
-  background-color: rgba(100, 115, 255, 0.5);
+  background-color: rgba(100, 115, 255, 0.6);
+  transition: 0.5s;
+}
+
+.purple:hover
+{
+  background-color: rgba(61, 0, 111, 0.6);
+  transition: 0.5s;
+}
+
+.white:hover
+{
+  background-color: rgba(255, 255, 255, 0.3);
   transition: 0.5s;
 }
 
 .padding 
 {
-  top: 5%;
+  top: 1000000%;
   display: flex;
   align-items: center;
   transition: 0.5s;
